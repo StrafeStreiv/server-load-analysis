@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="set.__getitem__" />
+          <option value="builtins.input.split" />
+          <option value="int.append" />
+          <option value="check.db" />
+          <option value="check.manager" />
+          <option value="check.request" />
+          <option value="check.User" />
+          <option value="check.check_password_hash" />
+          <option value="check.login_user" />
+          <option value="check.redirect" />
+          <option value="check.flash" />
+          <option value="check.render_template" />
+          <option value="check.app" />
+          <option value="check.generate_password_hash" />
+          <option value="check.url_for" />
+          <option value="check.login_required" />
+          <option value="check.logout_user" />
+          <option value="random.random.uniform" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
