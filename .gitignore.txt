@@ -1,0 +1,25 @@
+# Файлы с данными 
+data/*.csv
+data/*.json
+data/*.log
+!data/sample_data.csv  
+
+# Файлы БД
+*.db
+*.sqlite
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+
+# Виртуальные окружения
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
