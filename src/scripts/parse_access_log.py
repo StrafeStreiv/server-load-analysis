@@ -102,8 +102,8 @@ def generate_sample_logs():
         '192.168.1.6 - - [09/Oct/2024:10:30:09 +0300] "GET /api/metrics HTTP/1.1" 200 3456 "https://example.com" "Mozilla/5.0" 0.156'
     ]
 
-    os.makedirs('../../data', exist_ok=True)
-    with open('../../data/sample_access.log', 'w') as f:
+    os.makedirs('data', exist_ok=True)
+    with open('data/sample_access.log', 'w') as f:
         for log_entry in sample_logs:
             f.write(log_entry + '\n')
 
@@ -116,6 +116,6 @@ if __name__ == "__main__":
 
     # Парсим созданные логи
     parse_nginx_log(
-        log_file_path='../../data/sample_access.log',
-        output_file_path='../../data/parsed_access_logs.csv'
+        log_file_path='data/sample_access.log',
+        output_file_path='data/parsed_access_logs.csv'
     )
