@@ -1,0 +1,47 @@
+# Конфигурация приложения анализа нагрузки серверов
+app:
+  name: "Server Load Analysis System"
+  version: "1.0.0"
+  debug: false
+
+database:
+  default_db: "server_metrics.db"
+  type: "sqlite"
+  host: "localhost"
+  port: 5432
+  username: "user"
+  password: "password"
+  pool_size: 10
+
+data_collection:
+  metrics_interval_seconds: 60
+  log_parsing_batch_size: 1000
+  retention_days: 30
+  formats:
+    - "csv"
+    - "parquet"
+    - "json"
+
+analysis:
+  anomaly_threshold_cpu: 90.0
+  anomaly_threshold_memory: 85.0
+  slow_request_threshold_ms: 500
+  error_rate_threshold: 5.0
+  confidence_level: 0.95
+
+bigdata:
+  chunk_size: 100000
+  temp_directory: "temp"
+  compression: "snappy"
+  target_format: "parquet"
+
+monitoring:
+  enable_realtime: true
+  alert_email: "admin@example.com"
+  alert_webhook: "https://hooks.slack.com/services/..."
+
+paths:
+  data_directory: "data"
+  reports_directory: "reports"
+  logs_directory: "logs"
+  config_directory: "config"
