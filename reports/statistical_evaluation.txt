@@ -1,0 +1,52 @@
+============================================================
+STATISTICAL EVALUATION REPORT
+============================================================
+
+1. DATA COMPLETNESS
+----------------------------------------
+Total expected records: 613
+Total actual records: 613
+Completeness: 100.0%
+
+Completeness by server:
+  web01: 93.55% (203/217 records)
+  db01: 94.01% (204/217 records)
+  api01: 95.37% (206/216 records)
+
+2. SAMPLE HOMOGENEITY
+----------------------------------------
+Kruskal-Wallis Test:
+  H-statistic: 1.1626
+  p-value: 0.5592
+  Samples are homogeneous: True
+
+3. CONFIDENCE INTERVALS
+----------------------------------------
+CPU_USAGE:
+  Mean: 50.3328 ± 1.1414
+  95% CI: [49.1914, 51.4742]
+  Relative error: 2.27%
+  Sample size: 613
+MEMORY_USAGE:
+  Mean: 59.8767 ± 0.7997
+  95% CI: [59.0770, 60.6763]
+  Relative error: 1.34%
+  Sample size: 613
+RESPONSE_TIME_MS:
+  Mean: 100.6741 ± 2.2981
+  95% CI: [98.3760, 102.9722]
+  Relative error: 2.28%
+  Sample size: 613
+ERROR_RATE:
+  Mean: 0.9537 ± 0.0754
+  95% CI: [0.8783, 1.0291]
+  Relative error: 7.91%
+  Sample size: 613
+
+============================================================
+Formulas used:
+- Confidence Interval: x̄ ± t*(s/√n)
+- Standard Error: s/√n
+- Relative Error: (Margin of Error / Mean) * 100%
+- Kruskal-Wallis: Non-parametric test for homogeneity
+============================================================
